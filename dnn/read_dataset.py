@@ -2,7 +2,7 @@ import csv
 import numpy as np
 
 def read_train():
-    with open('datasets/train.csv', 'r') as f:
+    with open('../datasets/train.csv', 'r') as f:
         data_iter = csv.reader(f, delimiter=',')
         data = [data for data in data_iter]
 
@@ -25,7 +25,7 @@ def read_train():
     return x_train_set, y_train_set, y_train_raw
 
 def read_test():
-    with open('datasets/test.csv', 'r') as f:
+    with open('../datasets/test.csv', 'r') as f:
         data_iter = csv.reader(f, delimiter=',')
         data = [data for data in data_iter]
 
